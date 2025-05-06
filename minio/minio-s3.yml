@@ -43,13 +43,11 @@ spec:
   - port: 9090
     protocol: TCP
     targetPort: 9090
-    nodePort: 30040
     name: webconsole
   - port: 9000
     protocol: TCP
     targetPort: 9000
-    nodePort: 30041
     name: api
   selector:
     app: minio
-  type: NodePort
+  type: ClusterIP
